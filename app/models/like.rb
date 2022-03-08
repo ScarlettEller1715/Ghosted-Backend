@@ -8,7 +8,8 @@ class Like < ActiveRecord::Base
         matches
     end
 
-    def self.like_function(user, profile)
+    def self.like_function(userid, profileid)
+        
         if Like.exists?(:user_id => user.id, :profile_id => profile.id)
             interaction = Like.find_by(user_id: user.id, profile_id: profile.id)
             interaction.update(:user_like => true)
@@ -37,8 +38,6 @@ class Like < ActiveRecord::Base
         end
     end
 
-    #check if profile like = null
-    #check
 
 
 

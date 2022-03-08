@@ -24,4 +24,17 @@ class ApplicationController < Sinatra::Base
     matches.to_json
   end
 
+  patch "/likes/:userid/:profileid" do
+    "Hey there #{params[userid]} it's #{params[profileid]}"
+    #  Like.like_function(params[:userid], params[:profileid])
+  end
+
+  patch "/likes/dislike" do
+    Like.dislike_function(params[:user], params[:profile])
+  end
+
+  patch "/likes/undo" do
+    Like.undo_function(params[:user], params[:profile])
+  end
+
 end
