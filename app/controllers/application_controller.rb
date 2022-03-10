@@ -109,10 +109,12 @@ class ApplicationController < Sinatra::Base
   p30 = Profile.create(name: "Sarah", pronouns: "she/her/hers", age: 376, description: "I have a tendency to girlboss a little too close to the sun.", location: "Salem, MA", image: "http://scoobydoodaily.weebly.com/uploads/9/5/5/6/9556804/4619176_orig.png", swipe_status: false)
   p31 = Profile.create(name: "Owen", pronouns: "he/him/his", age: 133, description: "Have hat, will travel", location: "Anaheim, CA", image: "https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2014/07/HHG806493.jpg", swipe_status: false)
   p32 = Profile.create(name: "Vincent", pronouns: "he/him/his", age: 201, description: "Too cool to care...", location: "New York, NY", image: "https://upload.wikimedia.org/wikipedia/commons/8/87/Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg", swipe_status: false)
-
+  p33 = Profile.create(name: "Karl", pronouns: "he/him/his", age: 139, description: "Looking for the opium of my heart", location: "London, England", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/1280px-Karl_Marx_001.jpg", swipe_status: false)
+  p34 = Profile.create(name: "Calamity", pronouns: 'she/her/hers', age: 119, description: 'Wild at heart', location: "Pierre, South Dakota", image: 'https://4.bp.blogspot.com/-5Cza4gnh2hs/U5CyoWSkbZI/AAAAAAAANC0/SUDSocV8Jlw/s1600/Calamity-Jane+3.png', swipe_status: false)
+    
   profile_array = [p1.id, p2.id, p4.id, p5.id, p6.id, p7.id, p8.id, p9.id, p11.id, p12.id, 
   p13.id, p14.id, p15.id, p16.id, p17.id, p18.id, p19.id, p20.id, p21.id, p22.id, p23.id, 
-  p24.id, p25.id, p26.id, p27.id, p28.id, p29.id, p30.id, p31.id, p32.id].shuffle
+  p24.id, p25.id, p26.id, p27.id, p28.id, p29.id, p30.id, p31.id, p32.id, p33.id, p34.id,].shuffle
 
   l1 = Like.create(user_id: u1.id, profile_id: p10.id, user_like: true, profile_like: true)
   l2 = Like.create(user_id: u1.id, profile_id: p3.id, user_like: true, profile_like: true)
