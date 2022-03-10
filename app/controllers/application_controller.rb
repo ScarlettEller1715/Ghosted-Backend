@@ -98,9 +98,11 @@ class ApplicationController < Sinatra::Base
   p19 = Profile.create(name: "Jack", pronouns: "he/him/his", age: 133, description: "Cinema enthusiast. Fav films: Joker, American Psycho, Fight Club", location: "London, UK", image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/8d/55.jpg", swipe_status: false)
   p20 = Profile.create(name: "James", pronouns: "he/they/his", age: 66, description: "Rebel looking for a cause", location: "Hollywood, CA", image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/James_Dean_in_Rebel_Without_a_Cause.jpg", swipe_status: false)
   p21 = Profile.create(name: "Joe", pronouns: "he/him/his", age: 69, description: "DM me for my twitter account", location: "Moscow, USSR", image: "https://upload.wikimedia.org/wikipedia/commons/6/68/Young_stalin_screenshot.jpg", swipe_status: false)
-
+  p22 = Profile.create(name: "Karl", pronouns: "he/him/his", age: 139, description: "Looking for the opium of my heart", location: "London, England", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/1280px-Karl_Marx_001.jpg", swipe_status: false)
+  p23 = Profile.create(name: "Calamity", pronouns: 'she/her/hers', age: 119, description: 'Wild at heart', image: 'https://4.bp.blogspot.com/-5Cza4gnh2hs/U5CyoWSkbZI/AAAAAAAANC0/SUDSocV8Jlw/s1600/Calamity-Jane+3.png', swipe_status: false)
+  
   profile_array = [p1.id, p2.id, p4.id, p5.id, p6.id, p7.id, p8.id, p9.id, p11.id, p12.id, 
-  p13.id, p14.id, p15.id, p16.id, p17.id, p18.id, p19.id, p20.id, p21.id].shuffle
+  p13.id, p14.id, p15.id, p16.id, p17.id, p18.id, p19.id, p20.id, p21.id, p22.id, p23.id].shuffle
 
   l1 = Like.create(user_id: u1.id, profile_id: p10.id, user_like: true, profile_like: true)
   l2 = Like.create(user_id: u1.id, profile_id: p3.id, user_like: true, profile_like: true)
