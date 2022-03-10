@@ -31,14 +31,27 @@ p18 = Profile.create(name: "Cleo", pronouns: "she/they/hers", age: 2010, descrip
 p19 = Profile.create(name: "Jack", pronouns: "he/him/his", age: 133, description: "Cinema enthusiast. Fav films: Joker, American Psycho, Fight Club", location: "London, UK", image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/8d/55.jpg", swipe_status: false)
 p20 = Profile.create(name: "James", pronouns: "he/they/his", age: 66, description: "Rebel looking for a cause", location: "Hollywood, CA", image: "https://upload.wikimedia.org/wikipedia/commons/e/e6/James_Dean_in_Rebel_Without_a_Cause.jpg", swipe_status: false)
 p21 = Profile.create(name: "Joe", pronouns: "he/him/his", age: 69, description: "DM me for my twitter account", location: "Moscow, USSR", image: "https://upload.wikimedia.org/wikipedia/commons/6/68/Young_stalin_screenshot.jpg", swipe_status: false)
-p22 = Profile.create(name: "Karl", pronouns: "he/him/his", age: 139, description: "Looking for the opium of my heart", location: "London, England", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/1280px-Karl_Marx_001.jpg", swipe_status: false)
-p23 = Profile.create(name: "Calamity", pronouns: 'she/her/hers', age: 119, description: 'Wild at heart', image: 'https://4.bp.blogspot.com/-5Cza4gnh2hs/U5CyoWSkbZI/AAAAAAAANC0/SUDSocV8Jlw/s1600/Calamity-Jane+3.png', swipe_status: false)
+p22 = Profile.create(name: "Paul", pronouns: "he/him/his", age: 40, description: "Let me take you out to dinner, I can get us the BEST table.", location: "New York, NY", image: "https://otakukart.com/wp-content/uploads/2021/06/American-Psycho-Jared-Leto.jpg", swipe_status: false)
+p23 = Profile.create(name: "Constance", pronouns: "she/her/hers", age: 148, description: "Looking for commitment", location: "Winchester, CA", image: "https://i.pinimg.com/originals/60/ea/43/60ea43a374554630470b8df1cec6e266.png", swipe_status: false)
+p24 = Profile.create(name: "Saeki", pronouns: "she/her/hers", age: 31, description: "I LOVE a good surprise lol", location: "Tokyo, Japan", image: "https://www.indiewire.com/wp-content/uploads/2019/10/Screen-Shot-2019-10-07-at-10.45.18-AM.png", swipe_status: false)
+p25 = Profile.create(name: "Alice", pronouns: "she/her/hers", age: 98, description: "So TIRED of no visitors over quarantine. Take me on a date!", location: "Denver, CO", image: "https://escapeworksdenver.com/wp-content/uploads/2016/03/denver-ghost-1.jpg", swipe_status: false)
+p26 = Profile.create(name: "Marie", pronouns: "she/they/hers", age: 112, description: "People say I'm hard to read? Wtf?", location: "Boston, MA", image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6a/c3/b7.jpg", swipe_status: false)
+p27 = Profile.create(name: "Moonscar", pronouns: "he/him/his", age: 388, description: "Love long walks on the beach under the moonlit fog, my dessicated fingers wrapped around yours...", location: "Pensacola, FL", image: "https://i.pinimg.com/originals/4e/8e/75/4e8e7513ac19a5991f201f54c3a9150d.jpg", swipe_status: false)
+p28 = Profile.create(name: "Alister", pronouns: "he/they/theirs", age: 597, description: "Here for networking ONLY", location: "Your backyard", image: "https://ychef.files.bbci.co.uk/976x549/p04chzvm.jpg", swipe_status: false)
+p29 = Profile.create(name: "Opal", pronouns: "they/them/theirs", age: 821, description: "pls message first I am shy", location: "New York, NY", image: "https://images.saatchiart.com/saatchi/907609/art/3320811/2390698-HSC00001-32.jpg", swipe_status: false)
+p30 = Profile.create(name: "Sarah", pronouns: "she/her/hers", age: 376, description: "I have a tendency to girlboss a little too close to the sun.", location: "Salem, MA", image: "http://scoobydoodaily.weebly.com/uploads/9/5/5/6/9556804/4619176_orig.png", swipe_status: false)
+p31 = Profile.create(name: "Owen", pronouns: "he/him/his", age: 133, description: "Have hat, will travel", location: "Anaheim, CA", image: "https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2014/07/HHG806493.jpg", swipe_status: false)
+p32 = Profile.create(name: "Vincent", pronouns: "he/him/his", age: 201, description: "Too cool to care...", location: "New York, NY", image: "https://upload.wikimedia.org/wikipedia/commons/8/87/Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg", swipe_status: false)
+p33 = Profile.create(name: "Karl", pronouns: "he/him/his", age: 139, description: "Looking for the opium of my heart", location: "London, England", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/1280px-Karl_Marx_001.jpg", swipe_status: false)
+p34 = Profile.create(name: "Calamity", pronouns: 'she/her/hers', age: 119, description: 'Wild at heart', location: "Pierre, South Dakota", image: 'https://4.bp.blogspot.com/-5Cza4gnh2hs/U5CyoWSkbZI/AAAAAAAANC0/SUDSocV8Jlw/s1600/Calamity-Jane+3.png', swipe_status: false)
 
 
 puts "randomizing profile likes..."
 
 profile_array = [p1.id, p2.id, p4.id, p5.id, p6.id, p7.id, p8.id, p9.id, p11.id, p12.id, 
-p13.id, p14.id, p15.id, p16.id, p17.id, p18.id, p19.id, p20.id, p21.id, p22.id, p23.id].shuffle
+p13.id, p14.id, p15.id, p16.id, p17.id, p18.id, p19.id, p20.id, p21.id, p22.id, p23.id, 
+p24.id, p25.id, p26.id, p27.id, p28.id, p29.id, p30.id, p31.id, p32.id, p33.id, p34.id].shuffle
+
 
 puts "creating likes..."
 
