@@ -35,7 +35,17 @@ class Like < ActiveRecord::Base
         if interaction.profile_like == nil
             interaction.destroy
         else 
-            interaction.update(user_like: nil)
+            interaction.update(user_like: nil) 
+        end
+    end
+
+    def self.unmatch(user, profile)
+        interaction = Like.find_by(user_id: user.id, profile_id: profile.id)
+
+        if interaction.profile_like == nil
+            interaction.destroy
+        else 
+            interaction.update(:profile_like => false, :user_like => false)
         end
     end
 
