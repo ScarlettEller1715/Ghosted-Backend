@@ -44,13 +44,19 @@ p31 = Profile.create(name: "Owen", pronouns: "he/him/his", age: 133, description
 p32 = Profile.create(name: "Vincent", pronouns: "he/him/his", age: 201, description: "Too cool to care...", location: "New York, NY", image: "https://upload.wikimedia.org/wikipedia/commons/8/87/Vincent_van_Gogh_-_Head_of_a_skeleton_with_a_burning_cigarette_-_Google_Art_Project.jpg", swipe_status: false)
 p33 = Profile.create(name: "Karl", pronouns: "he/him/his", age: 139, description: "Looking for the opium of my heart", location: "London, England", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/1280px-Karl_Marx_001.jpg", swipe_status: false)
 p34 = Profile.create(name: "Calamity", pronouns: 'she/her/hers', age: 119, description: 'Wild at heart', location: "Pierre, South Dakota", image: 'https://4.bp.blogspot.com/-5Cza4gnh2hs/U5CyoWSkbZI/AAAAAAAANC0/SUDSocV8Jlw/s1600/Calamity-Jane+3.png', swipe_status: false)
-
+p35 = Profile.create(name: "Candyman", pronouns: 'he/him/his', age: 241, description: 'Sweet as honey, I am filled with bees after all', location: "Chicago, IL", image: 'https://atom-wordpress-assets.s3.amazonaws.com/movie-news/wp-content/uploads/2020/07/candyman-1024x640.png', swipe_status: false)
+p36 = Profile.create(name: "Present", pronouns: 'he/they/theirs', age: 10000, description: 'A feast for ALL senses!', location: "Christmas Eve", image: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Ghost_of_Christmas_Present_John_Leech_1843.jpg', swipe_status: false)
+p37 = Profile.create(name: "Howie", pronouns: 'he/him/his', age: 10, description: 'This is how I win.', location: "New York, NY", image: 'https://filmdaze.net/wp-content/uploads/2021/07/uncut_gems_0537171.0.jpg', swipe_status: false)
+p38 = Profile.create(name: "Jason", pronouns: 'he/him/his', age: 65, description: '...', image: 'https://wallpaperaccess.com/full/4942259.jpg', location: 'Camp Crystal Lake', swipe_status: false)
+p39 = Profile.create(name: "Wakasa", pronouns: 'she/her/hers', age: 387, description: 'Trying not to uhaul, failing miserably', image: 'https://www.jfny.org/karashi/wp-content/uploads/kyo-machiko-thumbnail.jpg', location: 'Kyoto, Japan', swipe_status: false)
+p40 = Profile.create(name: 'Billie', pronouns: 'she/her/hers', age: 63, description: 'Looking to end my solitude', image: 'https://assets.vogue.com/photos/6039702a2b4ed9246fc2c324/master/w_2560%2Cc_limit/GettyImages-104476113.jpg', location: "New York, NY", swipe_status: false)
 
 puts "randomizing profile likes..."
 
 profile_array = [p1.id, p2.id, p4.id, p5.id, p6.id, p7.id, p8.id, p9.id, p11.id, p12.id, 
 p13.id, p14.id, p15.id, p16.id, p17.id, p18.id, p19.id, p20.id, p21.id, p22.id, p23.id, 
-p24.id, p25.id, p26.id, p27.id, p28.id, p29.id, p30.id, p31.id, p32.id, p33.id, p34.id].shuffle
+p24.id, p25.id, p26.id, p27.id, p28.id, p29.id, p30.id, p31.id, p32.id, p33.id, p34.id, 
+p35.id, p36.id, p37.id, p38.id, p39.id, p40.id].shuffle
 
 
 puts "creating likes..."
