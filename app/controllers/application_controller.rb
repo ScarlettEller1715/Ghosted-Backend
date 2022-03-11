@@ -119,7 +119,7 @@ class ApplicationController < Sinatra::Base
   p33 = Profile.create(name: "Karl", pronouns: "he/him/his", age: 139, description: "Looking for the opium of my heart", location: "London, England", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/1280px-Karl_Marx_001.jpg", swipe_status: false)
   p34 = Profile.create(name: "Calamity", pronouns: 'she/her/hers', age: 119, description: 'Wild at heart', location: "Pierre, South Dakota", image: 'https://4.bp.blogspot.com/-5Cza4gnh2hs/U5CyoWSkbZI/AAAAAAAANC0/SUDSocV8Jlw/s1600/Calamity-Jane+3.png', swipe_status: false)
     
-  profile_array = [p1.id, p2.id, p4.id, p5.id, p6.id, p7.id, p8.id, p9.id, p11.id, p12.id, 
+  profile_array = [p1.id, p2.id, p4.id, p5.id, p6.id, p7.id, p8.id, p11.id, p12.id, 
   p13.id, p14.id, p15.id, p16.id, p17.id, p18.id, p19.id, p20.id, p21.id, p22.id, p23.id, 
   p24.id, p25.id, p26.id, p27.id, p28.id, p29.id, p30.id, p31.id, p32.id, p33.id, p34.id,].shuffle
 
@@ -137,6 +137,7 @@ class ApplicationController < Sinatra::Base
   l12 = Like.create(user_id: u1.id, profile_id: profile_array[10], user_like: nil, profile_like: true)
   l13 = Like.create(user_id: u1.id, profile_id: profile_array[11], user_like: nil, profile_like: true)
   l14 = Like.create(user_id: u1.id, profile_id: profile_array[12], user_like: nil, profile_like: true)
+  l15 = Like.create(user_id: u1.id, profile_id: p9.id, user_like: nil, profile_like: false)
 
   end
 
