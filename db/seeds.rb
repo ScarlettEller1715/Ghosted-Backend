@@ -50,13 +50,15 @@ p37 = Profile.create(name: "Howie", pronouns: 'he/him/his', age: 10, description
 p38 = Profile.create(name: "Jason", pronouns: 'he/him/his', age: 65, description: '...', image: 'https://wallpaperaccess.com/full/4942259.jpg', location: 'Camp Crystal Lake', swipe_status: false)
 p39 = Profile.create(name: "Wakasa", pronouns: 'she/her/hers', age: 387, description: 'Trying not to uhaul, failing miserably', image: 'https://www.jfny.org/karashi/wp-content/uploads/kyo-machiko-thumbnail.jpg', location: 'Kyoto, Japan', swipe_status: false)
 p40 = Profile.create(name: 'Billie', pronouns: 'she/her/hers', age: 63, description: 'Looking to end my solitude', image: 'https://assets.vogue.com/photos/6039702a2b4ed9246fc2c324/master/w_2560%2Cc_limit/GettyImages-104476113.jpg', location: "New York, NY", swipe_status: false)
+p41 = Profile.create(name: 'Javaman', pronouns: '?/?/?', age: 1000000, description: '?', image: 'https://cdn.britannica.com/87/143987-050-DCFB28C5/reconstruction-hominin-man-Java.jpg', location: "Java", swipe_status: false)
+
 
 puts "randomizing profile likes..."
 
 profile_array = [p1.id, p2.id, p4.id, p5.id, p6.id, p7.id, p8.id, p9.id, p11.id, p12.id, 
 p13.id, p14.id, p15.id, p16.id, p17.id, p18.id, p19.id, p20.id, p21.id, p22.id, p23.id, 
 p24.id, p25.id, p26.id, p27.id, p28.id, p29.id, p30.id, p31.id, p32.id, p33.id, p34.id, 
-p35.id, p36.id, p37.id, p38.id, p39.id, p40.id].shuffle
+p35.id, p36.id, p37.id, p38.id, p39.id, p40.id, p41.id].shuffle
 
 
 puts "creating likes..."
